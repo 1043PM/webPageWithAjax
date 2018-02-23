@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+#formulario{
+    border: #900 solid 0px;
+    margin: 0px auto;
+    background-color: #ff7043;
+}
+
+input[type=text], select, textarea{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type=email], select, textarea{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #870000;
+    color: white;
+    padding: 12px 200px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    float: center;
+
+}
+
+input[type=submit]:hover {
+
+    background-color: #f9683a;
+}
+
+.formulario {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.boton_falso{
+    background-color: #870000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    float: center;
+    width: 30%;
+    
+}
+p:hover{
+    background-color: #f9683a;
+}

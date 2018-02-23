@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/estilosFormulario.css">
+	<link rel="stylesheet" type="text/css" href="css/estilosIndex.css">
+  <meta charset="utf-8">
+  <script type="text/javascript" src="javaScript/js.js"> 
+  </script>
+
+</head>
+<body>
+	<div id="encabezado">
+	</div>
+	<div align="center" id="formulario" class="formulario">
+		<form action="" onsubmit="return validarFormulario(this.value)" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="nombre">*Nombre:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nombre" name="nombre" placeholder="tu nombre completo..." >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">*Email:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="tu email...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">País:</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country" onchange='loadCities(this.value);'>
+          <option value="Default">Selecciona un pais</option>
+          <option value="USA">USA</option>
+          <option value="Mexico">México</option>                    
+        </select>
+      </div>
+    </div>
+
+    <!-- ##############################################-->
+    <div class="row">
+      <div class="col-25">
+        <label for="city">Ciudad:</label>
+      </div>
+      <div class="col-75">
+        <select id="city" name="city"  disabled onchange='loadPurpose(this.value);'>
+          <option value="0">Selecciona una cuidad</option>         
+          <option value="otro">otro...</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- ##############################################-->
+    <div class="row">
+      <div class="col-25">
+        <label for="purpose">¿Por qué nos contactas?</label>
+      </div>
+      <div class="col-75">
+        <select id="purpose" name="purpose" disabled="true">
+          <option value="0">Selecciona un motivo</option>
+          <option value="otro">otro...</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- ##############################################-->
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">¿Qué nos quieres decir?</label>
+        <p>* campos obligatorios</p>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="decir" placeholder="escribe algo..." style="height:200px"></textarea>        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-75">
+          <br>
+         <p class="boton_falso">boton falso</p>
+       </div>
+      </div>
+    <div class="row">
+      <input type="submit" value="Submit">      
+    </div>
+		</form>
+	</div>
+
+</body>
+</html>
